@@ -18,6 +18,7 @@ public class SPPEJimenezREjemploMenu {
         //Variables
         int opEntrada;
         Scanner kb = new Scanner (System.in);
+        double lado,resultado;
         
         //Desplegamos menu
         System.out.println("Calculadora de áreas, perimetros y volumenes");
@@ -31,12 +32,23 @@ public class SPPEJimenezREjemploMenu {
         switch (opEntrada){
             case 1:
                 System.out.println("Bienvenido al cálculo de areas");
+                System.out.println("Introduce el lado del cuadrado");
+                lado=kb.nextDouble();
+                resultado=Math.pow(lado,2);
+                System.out.println("El area del cuadrado es "+resultado);
                 break;
             case 2:
                 System.out.println("Bienvenido al calculo de perimetros");
+                System.out.println("Introduce el lado del cuadrado");
+                lado=kb.nextDouble();
+                resultado=4*lado;
+                System.out.println("El perimetro del cuadrado es "+resultado);
                 break;
             case 3:
                 System.out.println("Bienvenido al calculo de volumenes");
+                System.out.println("Introduce el lado del cubo");
+                lado=kb.nextDouble();
+                resultado=Math.pow(lado,3);
                 break;
             default:
                 System.out.println("Adios");
