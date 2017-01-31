@@ -26,7 +26,7 @@ public class SPPEJimenezREjemploMenu {
         System.out.println("1.Calcular áreas");
         System.out.println("2. Calcular perimetros");
         System.out.println("3. Calcular volumenes");
-        System.out.println("Salir");
+        System.out.println("4.Salir");
         opEntrada = kb.nextInt();
         
         switch (opEntrada){
@@ -49,6 +49,7 @@ public class SPPEJimenezREjemploMenu {
                 System.out.println("Introduce el lado del cubo");
                 lado=kb.nextDouble();
                 resultado=Math.pow(lado,3);
+                System.out.println("El volumen del cubo es "+resultado);
                 break;
             default:
                 System.out.println("Adios");
